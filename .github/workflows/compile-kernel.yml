@@ -13,11 +13,11 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "unifreq"
+        default: "livelier"
         type: choice
         options:
           - unifreq
-          - kernel.org
+          - livelier
       kernel_version:
         description: "Select kernel version"
         required: false
@@ -81,7 +81,7 @@ jobs:
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Compile the kernel
-        uses: ophub/amlogic-s9xxx-armbian@main
+        uses: livelier/amlogic-s9xxx-armbian@latest
         if: ${{ steps.init.outputs.status }} == 'success' && !cancelled()
         with:
           build_target: kernel

@@ -134,7 +134,7 @@ jobs:
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Rebuild Armbian [ ${{ env.ARMBIAN_RELEASE }} ]
-        uses: ophub/amlogic-s9xxx-armbian@main
+        uses: livelier/amlogic-s9xxx-armbian@latest
         if: ${{ steps.down.outputs.status }} == 'success' && !cancelled()
         with:
           build_target: armbian
