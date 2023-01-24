@@ -2007,7 +2007,7 @@ CONFIG_MTD=y
 # Partition parsers
 #
 # CONFIG_MTD_AR7_PARTS is not set
-CONFIG_MTD_CMDLINE_PARTS=y
+# CONFIG_MTD_CMDLINE_PARTS is not set
 CONFIG_MTD_OF_PARTS=y
 CONFIG_MTD_AFS_PARTS=y
 # CONFIG_MTD_REDBOOT_PARTS is not set
@@ -2077,39 +2077,13 @@ CONFIG_MTD_MCHP23K256=m
 #
 # NAND
 #
-CONFIG_MTD_NAND_CORE=y
 # CONFIG_MTD_ONENAND is not set
-CONFIG_MTD_RAW_NAND=y
-
-#
-# Raw/parallel NAND flash controllers
-#
-# CONFIG_MTD_NAND_DENALI_PCI is not set
-# CONFIG_MTD_NAND_DENALI_DT is not set
-# CONFIG_MTD_NAND_CAFE is not set
-# CONFIG_MTD_NAND_BRCMNAND is not set
-# CONFIG_MTD_NAND_SUNXI is not set
-# CONFIG_MTD_NAND_MXIC is not set
-CONFIG_MTD_NAND_MESON=y
-# CONFIG_MTD_NAND_GPIO is not set
-# CONFIG_MTD_NAND_PLATFORM is not set
-# CONFIG_MTD_NAND_CADENCE is not set
-# CONFIG_MTD_NAND_ARASAN is not set
-# CONFIG_MTD_NAND_INTEL_LGM is not set
-# CONFIG_MTD_NAND_ROCKCHIP is not set
-
-#
-# Misc
-#
-# CONFIG_MTD_NAND_NANDSIM is not set
-# CONFIG_MTD_NAND_RICOH is not set
-# CONFIG_MTD_NAND_DISKONCHIP is not set
+# CONFIG_MTD_RAW_NAND is not set
 # CONFIG_MTD_SPI_NAND is not set
 
 #
 # ECC engine support
 #
-CONFIG_MTD_NAND_ECC=y
 # CONFIG_MTD_NAND_ECC_SW_HAMMING is not set
 # CONFIG_MTD_NAND_ECC_SW_BCH is not set
 # end of ECC engine support
